@@ -1,0 +1,39 @@
+body
+{
+    background-color: black;
+}
+.button-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cookie
+{
+    border: 0;
+    outline: 0;
+    margin: 100px 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #008b8b;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all .5s;
+}
+#cookie:hover
+{
+    background-color: #fff;
+    color: #008b8b;
+    transform: translateY(-15px);
+}
+#cookie:hover::before
+{
+    content: "⇒";
+}
+#cookie:hover::after
+{
+    content: "⇐";
+}
